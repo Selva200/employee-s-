@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+typedef struct
+{
+ int age,phnum;
+ char name[20];
+ float salary;
+} employee[20];
+int main()
+{
+ int n,i=0,j=0;
+ employee employees[20];
+ printf("Enter the no of Employee's=");
+ scanf("%d",&n);
+ if(n<20)
+  {
+ for(i=0;i<n;i++)
+  {
+  printf("Enter Employee %d detail \n",i+1);
+  printf("Employee Name :\t"); 
+  scanf("%s",& employees[i]->name); 
+  printf("Employee Age :\t");
+  scanf("%d",& employees[i]->age);
+  printf("Employee num :\t");
+  scanf("%d",& employees[i]->phnum);
+  printf("Emp salary   :\t"); 
+  scanf("%f",& employees[i]->salary); 
+  printf("\n \n"); 
+  }
+  printf("........All employee details........\n");
+printf("Name\t Age\t Number\t Salary\t\n");
+  
+  for(i=0;i<n;i++)
+  {
+    printf("%s\t",employees[i]->name);
+    printf("%d\t",employees[i]->age);
+    printf("%d\t",employees[i]->phnum);
+    printf("%f\t",employees[i]->salary);
+    
+    printf("\n");
+   }
+  }
+ else 
+  {
+    printf("Sry, It's exists the limit ");
+    }
+  
+  return 0;
+}
